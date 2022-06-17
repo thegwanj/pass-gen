@@ -34,3 +34,11 @@ THEN a password is generated that matches the selected criteria
 WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 ```
+
+## Mock-Up
+
+The following images show the web application's initial appearance and then the output once used:
+
+![The Password Generator application displays a red button to "Generate Password".](./assets/pass-gen-start.png)
+
+![The Password Generator application displays the generated password in the center box.](./assets/pass-gen-example.png)
