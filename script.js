@@ -14,9 +14,16 @@ var uppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"
 function generatePassword() {
 
   // Prompt the user for their password length and store it in a variable
+  var passLength = prompt("Please enter a password length", "8-128 characters");
+  console.log(passLength);
+  console.log(typeof(passLength));
 
   // Validate the user's provided passwordLength to be a number within the range of 8 to 128
   // IF password length is NOT a number OR is less than 8 OR is greater than 128;
+  if (passLength < 8 || passLength > 128 || passLength == null || passLength%1 != 0) {
+    alert("Invalid length");
+    return;
+  }
 
     // THEN Alert the user they provided an invalid password length
     // AND Return and exit early
