@@ -81,8 +81,10 @@ function generatePassword() {
   for(var i = 0; i < passLength; i++){
     password = password.concat(charPool[Math.floor(Math.random()*charPool.length)]);
     console.log("password: " + password);
-    console.log("i = " + i);
+    console.log("i: " + i);
   }
+
+  return password;
 
     // Randomly select a character from the list of characters
 
