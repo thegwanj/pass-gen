@@ -85,13 +85,6 @@ function generatePassword() {
   }
 
   return password;
-
-    // Randomly select a character from the list of characters
-
-    // Add the selected character to the password being built;
-
-  // RETURN the built password;
-
 } 
 
 // Assignment Code
