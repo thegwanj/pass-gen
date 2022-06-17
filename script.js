@@ -19,22 +19,26 @@ function generatePassword() {
   console.log(typeof(passLength));
 
   // Validate the user's provided passwordLength to be a number within the range of 8 to 128
-  // IF password length is NOT a number OR is less than 8 OR is greater than 128;
-  if (passLength < 8 || passLength > 128 || passLength == null || passLength%1 != 0) {
+  if (passLength < 8 || passLength > 128 || passLength == null || passLength%1 != 0) { //also makes sure we did not have an empty answer or a decimal
     alert("Invalid length");
     return;
   }
 
-    // THEN Alert the user they provided an invalid password length
-    // AND Return and exit early
-
   // Prompt the user for if they want special characters and store it in a variable
+  var includeSpecial = confirm("Would you like to include SPECIAL characters in your password?");
+  console.log(includeSpecial);
   
   // Prompt the user for if they want numbers characters and store it in a variable
+  var includeNumber = confirm("Would you like to include NUMBER characters in your password?");
+  console.log(includeNumber);
 
   // Prompt the user for if they want lowercase characters and store it in a variable
+  var includeLower = confirm("Would you like to include LOWERCASE characters in your password?");
+  console.log(includeLower);
 
   // Prompt the user for if they want uppercase characters and store it in a variable
+  var includeUpper = confirm("Would you like to include UPPERCASE characters in your password?");
+  console.log(includeUpper);
 
   // Validate the user's charater choices
   // IF the user answers no to all character choices
