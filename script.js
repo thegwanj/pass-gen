@@ -20,7 +20,7 @@ function generatePassword() {
 
   // Validate the user's provided passwordLength to be a number within the range of 8 to 128
   if (passLength < 8 || passLength > 128 || passLength == null || passLength%1 != 0) { //also makes sure we did not have an empty answer or a decimal
-    alert("Invalid length");
+    alert("Invalid length: Need to pick a length between 8 and 128 characters");
     return;
   }
 
@@ -41,10 +41,10 @@ function generatePassword() {
   console.log(includeUpper);
 
   // Validate the user's charater choices
-  // IF the user answers no to all character choices
-
-    // THEN Alert the user they they need to choose a character option
-    // AND Return and exit early
+  if(includeSpecial == false && includeNumber == false && includeLower == false && includeUpper == false){
+    alert("Invalid password configuration: Need to choose a character option");
+    return;
+  }
 
   // Celebrate! We have all the data we need :D
 
