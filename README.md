@@ -42,3 +42,7 @@ The following images show the web application's initial appearance and then the 
 ![The Password Generator application displays a red button to "Generate Password".](./assets/pass-gen-start.png)
 
 ![The Password Generator application displays the generated password in the center box.](./assets/pass-gen-example.png)
+
+## Deployed Application
+
+The deployed application can be found by going to the following link: https://thegwanj.github.io/pass-gen/
