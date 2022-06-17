@@ -49,15 +49,33 @@ function generatePassword() {
   // Celebrate! We have all the data we need :D
 
   // DECLARE a new empty array to store the `characters` we want to use.
+  var charPool = [];
 
-  // IF the users wants special characters
-
-      // combine special characters with `characters`
-      // @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat
+  // cool link for future reference https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat
 
   // REPEAT check and combine for numbers, lowercase and uppercase
+  if(includeSpecial == true){
+    charPool = charPool.concat(special);
+    console.log(charPool);
+  }
+
+  if(includeNumber == true){
+    charPool = charPool.concat(numbers);
+    console.log(charPool);
+  }
+
+  if(includeLower == true){
+    charPool = charPool.concat(lowercase);
+    console.log(charPool);
+  }
+
+  if(includeUpper == true){
+    charPool = charPool.concat(uppercase);
+    console.log(charPool);
+  }
 
   // DECLARE a new empty string to store the password we want to build.
+  var password = "";
 
   // FOR the length of the password the user wants
 
